@@ -3,7 +3,9 @@
 function getDados() {
   const url = "https://estagio.geopostenergy.com/WorldCup/GetAllTeams";
 
-  let resposta = "";
+  let resultado = "";
+  let selecao = "";
+  let html = document.querySelector("#conteudo");
 
   fetch(url, {
     method: "GET",
@@ -14,6 +16,12 @@ function getDados() {
     .then((response) => response.json())
     .then((resposta) => {
       console.log(resposta);
+      let index = 0;
+      resultado = resposta.Result;
+      selecao = resultado[index].Name
+      console.log(resultado);
+      console.log(selecao);
+      html.innerHTML = selecao;
     });
 }
 
