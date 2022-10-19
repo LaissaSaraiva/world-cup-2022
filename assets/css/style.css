@@ -1,3 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap");
 
+:root {
+  --background-header: #0c0a21;
+  --background-principal: #1d0212;
+  --background-secundario: #930f38;
+  --backgroung-footer: #550065;
+  --background-lista: #eeeee4;
+  --gradiente-principal: linear-gradient(
+    180deg,
+    var(--background-header),
+    var(--background-principal)
+  );
+  --color-principal: #fffbe3;
+  --color-black: #000000;
+  --color-tabela: #fffbe3;
+  --color-hover: #c7c7be;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Cabeçalho */
+.header {
+  background: var(--gradiente-principal);
+  color: var(--color-principal);
+  padding: 20px 0px;
+}
+
+.titulo, .sub__titulo {
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 1px 2px 1px var(--color-black);
+}
+
+/* Seção Principal - Teste */
+
+.principal__flex{
+display: flex;
+flex-direction: row;
+gap: 30px ;
+}
+
+.imagem__principal {
+background-color: #eeeee4;
+}
+
+.html {
+  background-color: #eeeee4;
+}
+
+/* Seção Tabelas */
+.section {
+  background-color: var(--background-principal);
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.tabelas__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.tabela {
+  background-color: var(--color-tabela);
+  border-radius: 50px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.tabela:hover {
+  box-shadow: 1px 2px 3px var(--color-hover);
+}
+
+.titulo__grupo {
+  color: var(--background-principal);
+  margin-bottom: 6px;
+}
+
+.tabela__selecao {
+  background-color: var(--background-lista);
+  color: var(--background-header);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.tabela__selecao:hover {
+  background-color: var(--color-hover);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--backgroung-footer);
+  padding: 10px 0;
+  text-align: center;
+  color: var(--color-principal);
+}
+
+.footer a {
+  font-weight: bold;
+  color: var(--color-principal);
+}
+
+.footer a:visited {
+  color:var(--color-principal);
+}
+
+.footer a:hover {
+color: var(--background-principal);
+}
