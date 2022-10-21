@@ -82,7 +82,7 @@ cursor:pointer;
 margin-left: 10px;
 }
 
-.botoes input:hover {
+.mostrar:hover {
   background-color: var(--color-black);
   color: var(--color-principal);
 }
