@@ -21,11 +21,25 @@
       <div class="imagem__principal">
         <img src="/assets/imgs/world-cup-favicon.png" alt="" />
       </div>
-      <form>
-        <input type="button" value="sortear">
-      </form>
 
-      <div class="html"></div>
+      <div>
+        <div class="botoes">
+          <form>
+            <label for="lista">Seleções participantes</label>
+            <input class="mostrar" type="button" name="lista" value="Mostrar Seleções"><br><br>
+            <label for="sortear">Sorteie os times</label>
+            <input class="sortear" type="button" name="sortear" value="Sortear">
+          </form>
+        </div>
+    </section>
+
+    <section class="section hidden">
+      <div class="container">
+        <h2>Seleções Participantes</h2>
+        <ul class="lista__selecoes">
+        </ul>
+      </div>
+    </div>
     </section>
 
     <section class="section tabelas__flex">
